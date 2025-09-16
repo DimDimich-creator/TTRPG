@@ -6,7 +6,14 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "TTRPG",
+      // defaultLocale: "root",
+      locales: {
+        root: {
+          label: "Русский",
+          lang: "ru",
+        },
+      },
       social: [
         {
           icon: "github",
@@ -20,6 +27,10 @@ export default defineConfig({
           items: [
             // Each item here is one entry in the navigation menu.
             { label: "Навыки", slug: "guides/skills" },
+            {
+              label: "Проверки, инвентарь и статы",
+              slug: "guides/checks-inventory-stats",
+            },
           ],
         },
       ],
