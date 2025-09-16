@@ -31,6 +31,7 @@ export default defineConfig({
               label: "Проверки, инвентарь и статы",
               slug: "guides/checks-inventory-stats",
             },
+            { label: "Боевая система", slug: "guides/combat-system" },
           ],
         },
       ],
